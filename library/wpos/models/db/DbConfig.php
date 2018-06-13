@@ -31,19 +31,19 @@ class DbConfig
     /**
      * @var string Username to login to database, could probably be fetched from a config file instead but w/e
      */
-    private static $_username = '';
+    private static $_username = 'goodbyeq_master';
     /**
      * @var string
      */
-    private static $_password = '';
+    private static $_password = 'goodbyeq-pass-2764$';
     /**
      * @var string
      */
-    private static $_database = '';
+    private static $_database = 'goodbyeq';
     /**
      * @var string
      */
-    private static $_hostname = 'localhost';
+    private static $_hostname = 'goodbyeq.c9rqdaqzwimk.ap-south-1.rds.amazonaws.com';
     /**
      * @var string
      */
@@ -91,7 +91,7 @@ class DbConfig
             $this->_db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
         } catch (PDOException $e) {
-            throw new PDOException('Failed to connect to database: '.$e->getMessage(), 0, $e);
+            throw new PDOException('Failed to connect to database: '.$e->getMessage(), 0, $_hostname);
         }
 
     }

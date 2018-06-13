@@ -1,7 +1,7 @@
 {
-  "host":"127.0.0.1",
+  "host":"goodbyeq.c9rqdaqzwimk.ap-south-1.rds.amazonaws.com",
   "port":3306,
-  "database":"database",
-  "user":"user",
-  "pass":"pass"
+  "database":"goodbyeq",
+  "user":"goodbyeq_master",
+  "pass":"goodbyeq-pass-2764$"
 }
