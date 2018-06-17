@@ -6,20 +6,48 @@
     right: 0;
     width:100%;
     height:100%;
-    background-color:#000000;
+    background-color:#0080A7;
     z-index: 3000;
 }
 #loginbox {
     width: 400px;
-    height: 380px;
+    top: 20%;
     left:50%;
     margin-left:-200px;
     margin-top: 60px;
     text-align: center;
+    background-color: transparent;
 }
+
+
+.btn-primary:hover, .open .btn-primary.dropdown-toggle {
+    background-color: #143F5C!important;
+    border-color: transparent;
+}
+
+.btn-primary, .open .btn-primary.dropdown-toggle {
+    background-color: #143F5C!important;
+    border-color: transparent;
+    border-radius: 5px;
+}
+#selfkartPrimBtn {
+  background-color: #FF8C00;
+  border-radius: 5px;
+  padding: 6px 12px;
+border: none;
+width: 180px;
+font-size: 14px;
+border: 5px solid transparent;
+}
+
+#selfkartPrimBtn:hover {
+  background-color: #FF8C00;
+}
+
 #loginbox .widget-main {
     padding: 16px 20px 20px;
     min-height: 100%;
+    border-radius: 5px;
 }
 #loginbox .input-icon {
     max-width: 320px;
@@ -165,4 +193,3 @@ table.dataTable tbody > tr.selected, table.dataTable tbody > tr > .selected {
         text-align: left !important;
     }
 }
-
