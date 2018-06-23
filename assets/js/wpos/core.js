@@ -177,9 +177,9 @@ function WPOS() {
         var modal = $('#loginmodal');
         if (lock){
             // session is being locked. set opacity
-            modal.css('background-color', "rgba(0,0,0,0.75)");
+            modal.css('background-color', "#0080A7");
         } else {
-            modal.css('background-color', "#000");
+            modal.css('background-color', "#0080A7");
         }
         modal.show();
     }
