@@ -176,82 +176,97 @@
 								class="selfkartPrimBtn" onClick="WPOS.items.addManualItemRow();">Add
 								Item</button>
 						</div>
-						<div id="totals">
-							<div id="totals-container">
-								<div class="totalsbox">
-									<div>
-										<div class="totalslabel">Subtotal:</div>
-										<div class="totalsval">
-											<span id="subtotal">$0.00</span>
+						<div style="position: absolute; bottom: 0;">
+							<div class="row">
+								<div id="totals">
+									<div id="totals-container">
+										<div class="totalsbox">
+											<div>
+												<div class="totalslabel">Subtotal:</div>
+												<div class="totalsval">
+													<span id="subtotal">$0.00</span>
+												</div>
+											</div>
+											<div>
+												<div class="totalslabel">Discount:</div>
+												<div class="totalsval">
+													<input onChange="WPOS.sales.updateDiscount();" size="2"
+														id="salediscount" type="text" class="numpad" value="0"
+														autocomplete="off" /><strong>%</strong>&nbsp;<span
+														id="discounttxt">($0.00)</span>
+												</div>
+											</div>
 										</div>
-									</div>
-									<div>
-										<div class="totalslabel">Discount:</div>
-										<div class="totalsval">
-											<input onChange="WPOS.sales.updateDiscount();" size="2"
-												id="salediscount" type="text" class="numpad" value="0"
-												autocomplete="off" /><strong>%</strong>&nbsp;<span
-												id="discounttxt">($0.00)</span>
+										<div class="totalsbox">
+											<div>
+												<div class="totalslabel">Tax:</div>
+												<div class="totalsval">
+													<span id="totaltax">$0.00</span>
+												</div>
+											</div>
+											<div>
+												<div class="totalslabel">Total:</div>
+												<div class="totalsval">
+													<span id="total">$0.00</span>
+												</div>
+											</div>
 										</div>
-									</div>
-								</div>
-								<div class="totalsbox">
-									<div>
-										<div class="totalslabel">Tax:</div>
-										<div class="totalsval">
-											<span id="totaltax">$0.00</span>
+										<div class="order_terminal_options" style="margin-top: 10px;">
+											<label class="fixedlabel" style="margin-right: 5px;"><input
+												type="radio" id="radio_takeaway" name="eatin" value="0"
+												onclick="$('#tablenumber').val(0).prop('readonly', true);"
+												checked="checked" /><b>&nbsp;Take Away</b></label> <label
+												class="fixedlabel" style="margin-right: 5px;"><input
+												type="radio" id="radio_eatin" name="eatin" value="1"
+												onclick="$('#tablenumber').prop('readonly', false);" /><b>&nbsp;Eat
+													In</b></label> <label class="fixedlabel"><b>Table #:</b><input
+												class="numpad" type="text" id="tablenumber" value="0"
+												size="3"
+												onclick="$('#radio_eatin').prop('checked', true); $(this).prop('readonly', false);"
+												readonly="readonly" /></label>
 										</div>
-									</div>
-									<div>
-										<div class="totalslabel">Total:</div>
-										<div class="totalsval">
-											<span id="total">$0.00</span>
-										</div>
-									</div>
-								</div>
-								<div class="order_terminal_options" style="margin-top: 10px;">
-									<label class="fixedlabel" style="margin-right: 5px;"><input
-										type="radio" id="radio_takeaway" name="eatin" value="0"
-										onclick="$('#tablenumber').val(0).prop('readonly', true);"
-										checked="checked" /><b>&nbsp;Take Away</b></label> <label
-										class="fixedlabel" style="margin-right: 5px;"><input
-										type="radio" id="radio_eatin" name="eatin" value="1"
-										onclick="$('#tablenumber').prop('readonly', false);" /><b>&nbsp;Eat
-											In</b></label> <label class="fixedlabel"><b>Table #:</b><input
-										class="numpad" type="text" id="tablenumber" value="0" size="3"
-										onclick="$('#radio_eatin').prop('checked', true); $(this).prop('readonly', false);"
-										readonly="readonly" /></label>
-								</div>
 
+									</div>
+
+								</div>
 							</div>
+							<div class="row" style="margin-top: 30px;">
+								<!-- 							<div id="regkey-container"> -->
+								<!-- 								<div id="regkey-inner"> -->
+								<!-- 									<div id="registerkeydiv"> -->
 
-						</div>
-						<div id="regkey-container">
-							<div id="regkey-inner">
-								<div id="registerkeydiv">
-									<button class="regbtn btn btn-success"
+								<!-- 									</div> -->
+								<!-- 									<div></div> -->
+								<!-- 								</div> -->
+								<!-- 							</div> -->
+								<div class="actionBtns">
+									<button class="regbtn btn btn-success col-sm-3"
+										style="margin: 10px; width: 153px;"
 										onClick="WPOS.sales.showPaymentDialog();">Process</button>
-									<button class="regbtn btn btn-danger"
+									<button class="regbtn btn btn-danger col-sm-3"
+										style="margin: 10px; width: 153px;"
 										onClick="WPOS.sales.userAbortSale();">Abort</button>
-									<button class="regbtn btn" onclick="WPOS.print.openCashDraw();">Till</button>
-									<button class="regbtn btn"
+									<button class="regbtn btn col-sm-3"
+										style="margin: 10px; width: 153px;"
+										onclick="WPOS.print.openCashDraw();">Till</button>
+									<button class="regbtn btn col-sm-3"
+										style="margin: 10px; width: 153px;"
 										onclick="WPOS.trans.recallLastTransaction();">Recall</button>
-								</div>
-								<div>
 									<button onclick="WPOS.trans.showTransactionView();"
-										class="regbtn btn btn-primary"
-										style="width: 153px; height: 50px; display: inline-block;">Transactions
+										class="regbtn btn col-sm-3"
+										style="width: 153px; display: inline-block; margin: 10px">Transactions
 									</button>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div id="ibox" class="widget-body col-sm-4" style="padding: 20px">
 
-					<div id="iboxitem_contain">
-						<div class="row">
-							<div id="iboxitems"></div>
+					<div id="ibox" class="widget-body col-sm-4" style="padding: 20px">
+
+						<div id="iboxitem_contain">
+							<div class="row">
+								<div id="iboxitems"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1044,12 +1059,12 @@
 				<div id="logindiv" style="display: none;">
 					<label class="block clearfix"> <span
 						class="block input-icon input-icon-right"> <input
-							class="form-control" id="username" name="username" type="text"
-							placeholder="Username" /> <i class="icon-user"></i>
+							class="form-control tbox" id="username" name="username"
+							type="text" placeholder="Username" /> <i class="icon-user"></i>
 					</span>
 					</label> <label class="block clearfix"> <span
 						class="block input-icon input-icon-right"> <input
-							class="form-control" id="password" name="password"
+							class="form-control tbox" id="password" name="password"
 							onkeypress="if(event.keyCode == 13){WPOS.userLogin();}"
 							type="password" placeholder="Password" /> <i class="icon-lock"></i>
 					</span>

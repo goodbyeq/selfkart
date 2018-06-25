@@ -1,3 +1,6 @@
+.sample {
+	
+}
 .selfkartPrimBtn {
 	background-color: #FF8C00;
 	border-radius: 5px;
@@ -2921,6 +2924,20 @@ fieldset[disabled] .btn-info.active {
   background-color: #6FB3E0 !important;
   border-color: #6FB3E0;
 }
+.btn-success {
+	border-color: #87B87F;
+	border-radius: 5px;
+}
+.btn-danger {
+	border-color: #87B87F;
+	border-radius: 5px;
+}
+
+.regbtn {
+	border-color: #ABBAC3;
+	border-radius: 5px;
+}
+
 .btn-success,
 .btn-success:focus {
   background-color: #87B87F !important;
@@ -14267,3 +14284,4 @@ th[aria-selected=true] .ui-jqgrid-sortable {
     top: 65px;
   }
 }
+
