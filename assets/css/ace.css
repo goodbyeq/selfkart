@@ -23,8 +23,7 @@ body {
   background-color: #E4E6E9;
   min-height: 100%;
   font-family: 'Open Sans';
-  font-size: 13px;
-  color: #393939;
+  color: #FFFFFF;
   line-height: 1.5;
 }
 body.navbar-fixed {
@@ -7159,9 +7158,7 @@ td .lbl:only-child {
   color: #E09E96;
 }
 .widget-body {
-  border: 1px solid #CCC;
   border-top: none;
-  background-color: #FFF;
 }
 .widget-main {
   padding: 12px;
@@ -7386,7 +7383,7 @@ td .lbl:only-child {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   border: none;
   border-bottom: 1px solid #DCE8F1;
-  color: #4383B4;
+  color: #FFFFFF;
   padding-left: 3px;
 }
 .widget-box.transparent > .widget-header-large {
@@ -12296,7 +12293,6 @@ img.editable-click:hover {
   top: 1px;
 }
 .ui-tabs .ui-tabs-panel {
-  border: 1px solid #C5D0DC;
   border-top-width: 0;
   margin: 0;
   left: auto;

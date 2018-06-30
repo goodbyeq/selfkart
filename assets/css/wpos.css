@@ -17,7 +17,8 @@ body {
 	height: auto;
 	min-height: 100vh;
 	padding: 5px;
-	background-color: #FFF;
+	border: 0px;
+	background-color: #0080A7;
 	z-index: 1;
 }
 
@@ -134,7 +135,7 @@ body {
 }
 
 .totalsval {
-	font-size: 16px;
+	font-size: 20px;
 	width: 120px;
 	display: inline-block;
 }
@@ -230,7 +231,6 @@ body {
 	position: relative;
 	min-width: 0;
 	height: 100%;
-	background-color: white;
 	overflow-x: hidden !important;
 }
 
@@ -245,9 +245,10 @@ body {
 	width: 134px;
 	height: 134px;
 	border: 2px solid #0080A7;
-	border-radius: 4px;
+	border-radius: 10px;
 	display: inline-block;
-	background-color: #0080A7;
+	background-color: #FFFFFF;
+	color: #0080A7;
 	margin: 4px;
 	text-align: center;
 	vertical-align: middle;

@@ -176,7 +176,7 @@
 								class="selfkartPrimBtn" onClick="WPOS.items.addManualItemRow();">Add
 								Item</button>
 						</div>
-						<div style="position: absolute; bottom: 0;">
+						<div>
 							<div class="row">
 								<div id="totals">
 									<div id="totals-container">
@@ -184,7 +184,7 @@
 											<div>
 												<div class="totalslabel">Subtotal:</div>
 												<div class="totalsval">
-													<span id="subtotal">$0.00</span>
+													<span id="subtotal">&#8377; 0.00</span>
 												</div>
 											</div>
 											<div>
@@ -193,7 +193,7 @@
 													<input onChange="WPOS.sales.updateDiscount();" size="2"
 														id="salediscount" type="text" class="numpad" value="0"
 														autocomplete="off" /><strong>%</strong>&nbsp;<span
-														id="discounttxt">($0.00)</span>
+														id="discounttxt">(&#8377; 0.00)</span>
 												</div>
 											</div>
 										</div>
@@ -201,14 +201,11 @@
 											<div>
 												<div class="totalslabel">Tax:</div>
 												<div class="totalsval">
-													<span id="totaltax">$0.00</span>
+													<span id="totaltax">&#8377; 0.00</span>
 												</div>
 											</div>
 											<div>
-												<div class="totalslabel">Total:</div>
-												<div class="totalsval">
-													<span id="total">$0.00</span>
-												</div>
+												<span id="total" style="font-size: 40px">&#8377; 0.00</span>
 											</div>
 										</div>
 										<div class="order_terminal_options" style="margin-top: 10px;">
@@ -1022,25 +1019,18 @@
 				</div>
 			</div>
 		</div>
-		<div id="statusbar"
-			style="width: 100%; position: absolute; bottom: 0; min-height: 40px; background-color: #0080A7; padding-top: 10px;">
-			<div class="col-sm-3 col-xs-6" style="vertical-align: middle;">
-				<div id="printstat">
-					<i class="icon-print icon-large white" style="margin-right: 5px;"></i>&nbsp;<span
-						id="printstattxt" class="white">Initializing...</span>
-				</div>
-			</div>
-			<div id="wposstat" class="col-sm-3 col-sm-push-6 col-xs-6 text-right">
-				<span id="wposstattxt" class="white">WPOS is Online</span> <span
-					id="wposstaticon" class="badge badge-success"
-					style="margin-left: 5px;"><i class="icon-ok"></i></span>
-			</div>
-			<div class="col-sm-6 col-sm-pull-3 text-center white"
-				style="padding-bottom: 10px;">
-				<span class="biz_name"></span> - <span class="device_name"></span> -
-				<span class="location_name"></span>
-			</div>
-		</div>
+<!-- 		<div id="statusbar" -->
+<!-- 			<div id="wposstat" class="col-sm-3 col-sm-push-6 col-xs-6 text-right"> -->
+<!-- 				<span id="wposstattxt" class="white">WPOS is Online</span> <span -->
+<!-- 					id="wposstaticon" class="badge badge-success" -->
+<!-- 					style="margin-left: 5px;"><i class="icon-ok"></i></span> -->
+<!-- 			</div> -->
+<!-- 			<div class="col-sm-6 col-sm-pull-3 text-center white" -->
+<!-- 				style="padding-bottom: 10px;"> -->
+<!-- 				<span class="biz_name"></span> - <span class="device_name"></span> - -->
+<!-- 				<span class="location_name"></span> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
 		<iframe id="dlframe"
 			style="width: 1px; height: 1px; border: 0; position: absolute; bottom: 0; left: 0; z-index: -1;"></iframe>
 	</div>

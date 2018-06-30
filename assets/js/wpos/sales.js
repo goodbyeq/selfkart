@@ -105,7 +105,7 @@ function WPOSItems() {
 
     this.generateItemGrid = function(categoryId){
         var iboxitems = $("#iboxitems");
-        iboxitems.html('<div style="padding: 5px;"><button class="btn btn-sm btn-primary" onclick="WPOS.items.generateItemGridCategories();"><i class="icon-backward">&nbsp;</i>Categories</button></div>');
+        iboxitems.html('<div style="padding: 5px;"><button class="selfkartPrimBtn" onclick="WPOS.items.generateItemGridCategories();"><i class="icon-backward">&nbsp;</i>Categories</button></div>');
         var price;
         var items = [];
         if (categoryId>-1){
