@@ -90,19 +90,19 @@
 				<button title="Open Administration Dashboard"
 					onClick="window.open('/admin');"
 					style="margin-right: 4px; margin-left: 4px;"
-					class="btn btn-xs btn-primary">
+					class="selfkartPrimBtn">
 					<i class="icon icon-cog">&nbsp;Admin</i>
 				</button>
 				<button title="Lock terminal or switch user" id="switch_user_btn"
 					onClick="WPOS.lockSession();"
 					style="margin-right: 4px; margin-left: 4px;"
-					class="btn btn-xs btn-primary">
+					class="selfkartPrimBtn">
 					<i class="icon icon-lock"></i>&nbsp;Lock
 				</button>
 				<button title="Expand window" id="window_width_toggle"
 					onClick="expandWindow();"
 					style="margin-right: 4px; margin-left: 6px;"
-					class="btn btn-xs btn-primary">
+					class="selfkartPrimBtn">
 					<i class="icon icon-expand"></i>
 				</button>
 			</div>
@@ -123,6 +123,7 @@
 											onkeypress="if(event.keyCode=='13' || event.keyCode=='7'){ WPOS.items.addItemFromStockCode($('#codeinput').val()); }" /></label>
 										<button
 											class="selfkartPrimBtn field-button field-button-attach"
+											style="margin-left: 5px;"
 											onclick="WPOS.items.addItemFromStockCode($('#codeinput').val());">Add</button>
 									</div>
 									&nbsp;&nbsp;
@@ -1112,15 +1113,15 @@
 					onclick="WPOS.sales.startEftposPayment();">Start Eftpos</button>
 			</div>
 			<div style="margin-top: 20px;">
-				<button class="btn btn-xs btn-primary"
+				<button class="selfkartPrimBtn"
 					onclick="WPOS.sales.addPayment('cash');">Cash</button>
-				<button class="btn btn-xs btn-primary"
+				<button class="selfkartPrimBtn"
 					onclick="WPOS.sales.addPayment('credit');">Credit</button>
-				<button class="btn btn-xs btn-primary"
+				<button class="selfkartPrimBtn"
 					onclick="WPOS.sales.addPayment('eftpos');">Eftpos</button>
-				<button class="btn btn-xs btn-primary"
+				<button class="selfkartPrimBtn"
 					onclick="WPOS.sales.addPayment('cheque');">Cheque</button>
-				<button style="float: right;" class="btn btn-xs btn-primary"
+				<button style="float: right;" class="selfkartPrimBtn"
 					onclick="WPOS.sales.addAdditionalPayment();">Add Payment</button>
 			</div>
 		</div>
@@ -1173,7 +1174,7 @@
 				<div class="col-sm-6">
 					<label style="vertical-align: top;" class="fixedlabel">Notes:
 						<textarea style="margin-left: 38px;" id="transnotes" tabindex="-1"></textarea><br />
-						<button style="float: right;" class="btn btn-xs btn-primary"
+						<button style="float: right;" class="selfkartPrimBtn"
 							onclick="WPOS.trans.updateSaleNotes($('#transref').text(), $('#transnotes').text());">Save</button>
 					</label>
 				</div>
