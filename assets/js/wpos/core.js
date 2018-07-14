@@ -1622,7 +1622,7 @@ $(function () {
             ibox.animate({width:"100%"}, 500);
         } else {
             iboxopen = false;
-            ibox.animate({width:"0"}, 500);
+            ibox.animate({width:"100%"}, 500);
         }
     };
     var isDragging = false;
@@ -1649,7 +1649,7 @@ $(function () {
                         // set box open indicator
                         iboxopen = (relX>0);
                     } else {
-                        ibox.css('width', "0px");//closing too fast hide.
+                        ibox.css('width', "100px");//closing too fast hide.
                     }
                 });
 
