@@ -18,7 +18,7 @@ body {
 	min-height: 100vh;
 	padding: 5px;
 	border: 0px;
-	background-color: #0080A7;
+	background-color: white;
 	z-index: 1;
 }
 
@@ -206,11 +206,6 @@ body {
 }
 
 #ibox {
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	margin-bottom: 38px;
 	overflow: visible !important;
 	overflow-x: visible !important;
 	/* Needed for when overflow is overridden */
@@ -233,14 +228,11 @@ body {
 	position: relative;
 	min-width: 0;
 	height: 100%;
-	overflow-x: hidden !important;
 }
 
 #iboxitems {
 	margin: 5px;
 	margin-left: 15px;
-	width: 440px;
-	overflow-x: hidden !important;
 }
 
 .iboxitem {

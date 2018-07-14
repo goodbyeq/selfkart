@@ -23,7 +23,7 @@ body {
   background-color: #E4E6E9;
   min-height: 100%;
   font-family: 'Open Sans';
-  color: #FFFFFF;
+  color: #00000;
   line-height: 1.5;
 }
 body.navbar-fixed {
@@ -1140,7 +1140,7 @@ blockquote.pull-right {
   padding-right: 0;
   min-height: 45px;
   position: relative;
-  background: #0080A7;
+  background: white;
 }
 .navbar > .container {
   padding-left: 0;
