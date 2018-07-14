@@ -7,9 +7,17 @@
 	width: 100%;
 	height: 100%;
 	background-color: #0080A7;
+	background-image: url('/assets/images/mainscreenbgicons.png');
 	z-index: 3000;
 }
 
+.ui-dialog {
+	color: black;
+	border-radius: 5px;
+	padding: 10px;
+}
+	
+	
 #loginbox {
 	width: 400px;
 	top: 20%;

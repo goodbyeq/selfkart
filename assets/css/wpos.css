@@ -35,7 +35,10 @@ body {
 #items {
 	min-height: 300px;
 }
-
+.ui-dialog {
+	color: black;
+}
+	
 #totals {
 	width: calc(100% - 13px);
 	bottom: 0;
