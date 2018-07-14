@@ -51,7 +51,6 @@ body {
 	height: 100%;
 	background-color: #0080A7;
 	background-image: url('/assets/images/mainscreenbgicons.png');
-	background-size: 150px 150px;
 	z-index: 3000;
 }
 
